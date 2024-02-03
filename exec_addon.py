@@ -6,7 +6,7 @@ bl_info = {
     "blender": (4, 0, 0),
     "location": "Render > Execute Script",
     "warning": "", # used for warning icon and text in addons panel
-    "doc_url": "",
+    "doc_url": "https://github.com/magnusviri/blender_scripts",
     "tracker_url": "",
     "support": "COMMUNITY",
     "category": "Developer",
@@ -37,6 +37,7 @@ def main(context):
         exec(script.as_string())
     else:
         print("No script found")
+    print("My Script Finished: %.4f sec" % (time.time() - time_start))
 
 
 class ExecuteScript(bpy.types.Operator):
