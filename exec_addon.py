@@ -46,9 +46,6 @@ class ExecuteScript(bpy.types.Operator):
     bl_label = "Execute Script"
 
     @classmethod
-    def poll(cls, context):
-        return context.active_object is not None
-
     def execute(self, context):
         main(context)
         return {'FINISHED'}
