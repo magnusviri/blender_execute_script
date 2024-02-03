@@ -14,6 +14,6 @@ If it doesn't find that file, then it will look in it's text data for a text nam
 
 If one isn't there, exec_addon.py will execute bpy.data.texts[0] if it exists. Maybe not a good idea? IDK. Maybe it should look for the first text that ends in ".py"? Maybe it should execute all scripts that end in ".py"? IDK.
 
-The purpose of looking for a file on the filesystem first is because I believe most people would rather edit scripts outside of BLender. So that's what it checks and executes first.
+The purpose of looking for a file on the filesystem first is because I believe most people would rather edit scripts outside of Blender. So that's what it checks and executes first.
 
 If your blend file doesn't have bpy.data.texts[0], then it prints a message to the console and exits. I don't know if Blender allows me to show a message. If it does, then that would be preferable to printing to the console. I'm still new to Blender so I don't know.
